@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Book Details</title>
+</head>
+<body>
+Name:{{Name}}
+<br><br>
+Author:{{Author}}
+<br><br>
+Subject:{{Subject}}
+<br><br>
+Rating:{{Rating}}
+<br><br>
+Summary:{{Summary}}
+<br><br>
+{% if No_of_Copies %}
+<a href="/requestbook"> <button>Request</button></a>
+Copies:{{No_of_Copies}}
+{% endif %}
+<br><br>
+<br><br>
+{% if message %}
+{{message}}
+{% endif %}
+</body>
+</html>
+

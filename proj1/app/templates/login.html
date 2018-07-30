@@ -1,0 +1,20 @@
+<html>
+<body>
+	<form action="/login/" method="post">
+	<br>
+	<br>
+	Username <input type="text" name="username">
+		<br>
+	<br>
+	Password <input type="password" name="password">
+	<br>
+	<br>
+	<input type="Submit" value="Login">
+</form> <a href="/reg/"> <button>SignUp</button></a>
+<a href="/forgetpassword"> <button>Forgot Password</button> </a>
+{% if message %}
+	{{message}}
+{% endif %}
+
+</body>
+</html>

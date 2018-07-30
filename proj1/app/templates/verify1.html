@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/verify1/" method="post">
+	Enter Verification Code <input type="text" name="vcode">
+	<br>
+	<br>
+	<input type="Submit" name="Enter">
+
+	{% if message %}
+	{{message}}
+	{% endif %}
+</form>
+</body>
+</html>

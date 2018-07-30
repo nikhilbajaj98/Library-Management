@@ -1,0 +1,38 @@
+<html>
+<body>
+
+	{% if message %}
+	{{message}}
+{% endif %}
+<br>
+<br>
+REGISTRATION:
+	<form action="/reg/" method="post">
+		<br>
+	Name <input type="text" name="name">
+	<br>
+	<br>
+	Username <input type="text" name="username">
+		<br>
+	<br>
+	Password <input type="password" name="password">
+	<br>
+	<br>
+	Email <input type="email" name="email">
+	<br>
+	<br>
+	Phone <input type="text" name="phone_number">
+	<br>
+	<br>
+	Access Type
+	<br><br>
+	<input type="radio" name="user_type" value="librarian">Librarian
+	<br><br>
+	<input type="radio" name="user_type" value="student">Student
+	<br><br>
+	<input type="Submit" value="Register">
+</form>
+
+
+	</body>
+	</html>

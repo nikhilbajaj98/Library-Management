@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+<table>
+	
+	<table style="width:100%" border='1'>
+
+		<tr>
+			<th>Book_Id</th>
+			<th>Book_Name</th>
+			<th>Author_Name</th>
+			<th>Subject</th>
+			<th>Rating</th>
+			<th>No_of_Copies</th>
+			<th>No_of_Requests</th>
+		</tr>
+		{% for i in books %}
+		<tr>
+<td>{{i.id}}</td>
+<td> <a href ="/book_details/?book_id={{i.id}}">{{i.Name}} </a></td>
+<td>{{i.Author}}</td>
+<td>{{i.Subject}}</td>
+<td>{{i.Rating}}</td>
+<td>{{i.No_of_Copies}}</td>
+<td>{{i.No_of_Requests}}</td>
+</tr>
+
+{% endfor %}
+</table>
+</body>
+</html>
