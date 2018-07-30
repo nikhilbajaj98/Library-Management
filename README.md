@@ -1,2 +1,1 @@
-# nikhil
-temporary
+Library Management System using Django
