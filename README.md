@@ -1,1 +1,1 @@
-Library Management System using Django
+Library Management System-Django.
